@@ -20,7 +20,7 @@ app.controller('myCtrl', function($scope) {
 		    	{ 	name: "ISAAC",
 		    		desc: "(Interval Scheduling Algorithm with Applied Constraints) Developed a scheduling web app what utilizes Monte Carlo methods and graph theory to optimize students' schedules.", 
 		    		year:2015,
-					tooltip:"During <i>Hack Week</i> 2015, I proposed the idea that our group design a web app that aids students in choosing classes.  First-year students are presented with literally <i>billions</i> of possible options, and it is a tedious and discouraging task to pick a schedule that matches their preferences.  Our web app allows students to choose courses that they need, that fit their preferred schedule (e.g. <i>Maximize days off</i>, <i>fewer evening classes</i>, etc.).  View a news article on the venture on the <a href='https://news.uoit.ca/archives/2015/08/uoit-science-researcher-encourages-students-to-embrace-summer-hack-week.php' target=_blank >UOIT website here.</a> See the app in action <a href='http://scheduler.uoitphysics.ca/' target=_blank >here</a>. <p align='center'><a href='http://scheduler.uoitphysics.ca' target=_blank><img src='./image/ISAAC_logo.svg' width='60%' ></a></p> ",
+					tooltip:"During <i>Hack Week</i> 2015, I proposed the idea that our group design a web app that aids students in choosing classes.  First-year students are presented with literally <i>billions</i> of possible options, and it is a tedious and discouraging task to pick a schedule that matches their preferences.  Our web app allows students to choose courses that they need, that fit their preferred schedule (e.g. <i>Maximize days off</i>, <i>fewer evening classes</i>, etc.).  View a news article on the venture on the <a href='https://news.uoit.ca/archives/2015/08/uoit-science-researcher-encourages-students-to-embrace-summer-hack-week.php' target=_blank >UOIT website here.</a> See the app in action <a href='http://scheduler.uoitphysics.ca/' target=_blank >here</a>. <p align='center'><a href='http://scheduler.uoitphysics.ca' target=_blank><img src='image/ISAAC_logo.svg' width='60%' ></a></p> ",
 		    		url:"http://scheduler.uoitphysics.ca" 
 		    	},
 		        { 	name: "Science Rendezvous Weather Balloon Launch",
@@ -67,14 +67,14 @@ app.controller('myCtrl', function($scope) {
                 desc: "Designed cover image chosen to appear on the cover of the July 30, 2015 issue of the Journal of Physical Chemistry C.",
                 year: 2015,
                 url:'',
-                tooltip:"<a href='http://pubs.acs.org/toc/jpccck/119/30' target=_blank ><img src='./image/jpccck_v119i030_small.jpg' width='100%' /></a>"
+                tooltip:"<a href='http://pubs.acs.org/toc/jpccck/119/30' target=_blank ><img src='image/jpccck_v119i030_small.jpg' width='100%' /></a>"
             },
             {   title: "Designing Lightweight Aluminum Composites: A Density Functional Theory Approach",
                 journal: "Bachelor of Science (Honours) Thesis",
                 desc:"Original research Honours thesis report outlining research carried out from September 2014 to April 2015.",
                 year: 2015,
                 url:'http://kylemills.net/files/kmills_thesis_web.pdf',
-                tooltip:"<a href='http://kylemills.net/files/kmills_thesis_web.pdf' target=_blank ><img src='./image/kmills_ug_thesis_cover.jpg' width='100%' /></a>"
+                tooltip:"<a href='http://kylemills.net/files/kmills_thesis_web.pdf' target=_blank ><img src='image/kmills_ug_thesis_cover.jpg' width='100%' /></a>"
             }
         
         ],
