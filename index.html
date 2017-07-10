@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+	<head> 
+	<meta property="og:title" content="Kyle Mills">
+<meta property="og:site_name" content="Kyle Mills">
+<meta property="og:url" content="http://kylemills.net">
+<meta property="og:description" content="I am a graduate student at the University of Ontario Institute of Technology. In 2015 I completed my Bachelor's of Science in physics, with a minor in mathematics. I am interested in general applications of computational models and techniques to scientific research, specifically in the area of computational materials science.">
+<meta property="fb:app_id" content="">
+<meta property="og:type" content="article">
+<meta property="og:image" content="http://kylemills.net/image/kyle_mills.png" >
+
+
+   	        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Kyle Mills">
+		<meta name="author" content="Kyle Mills">
+        <meta name="theme-color" content="#821122">
+
+		<title>Kyle Mills</title>
+	  
+
+  		<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="http://kylemills.net/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="./css/jquery.qtip.css" />
+
+	
+		<link rel="shortcut icon" href="http://kylemills.net/image/favicon.png" type="image/x-icon">
+		<link rel="icon" href="http://kylemills.net/image/favicon.png" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="./scripts/jquery.min.js" ></script>
+        <script src="./scripts/jquery.qtip.min.js" ></script>
+   
+        <style>
+            .qtipClass {
+               background-color: #f5e9eb;
+               border-color:#821122;     
+               font-size: inherit;
+               
+               max-width: 90% !important;
+               max-height: 75%;
+               line-height: inherit;
+            }
+        </style>
+
+        
+        <script>
+        
+            $(document).ready(function() {
+                
+                $('[id^=MoreInfoButtonProject]').each(function(key,v){
+                    $(this).click(function() {
+//                        $('[id^=moreProjectInfo]').slideUp();
+                        $('#moreProjectInfo' + key).slideToggle();
+                    });  
+                });
+                
+                $('[id^=MoreInfoButtonPublication]').each(function(key,v){
+                    $(this).click(function() {
+//                        $('[id^=morePublicationInfo]').slideUp();
+                        $('#morePublicationInfo' + key).slideToggle();
+                    });  
+                });                
+                
+            })
+        
+        </script>
+        
+    </head>
+    <body>
+    
+
+<!--- ANALYTICS TRACKING -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96824196-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--- ANALYTICS TRACKING -->
+
+        <div id="infoBar" class="container-info">	
+            <div class="opl"><a></a></div>
+			<a name="top-mobile"></a>
+			<div class="info-main">
+				<div class="info__headshot"><img class="info__headshot-img" src="image/kmills.jpg" title="Kyle Mills"></div>
+				<div class="info__tag"></div>
+				<div class="info__elevator">
+					<h1 class="info__elevator-text">
+						Kyle <span style="font-weight: 100;">Mills</span></h1>
+				</div>
+				<a href="mailto:kyle@kylemills.net" class="info__button--dark">Contact me</a>
+			</div>
+			<div class="info-footer">
+				<div class="info-footer__kitchener">					
+					<span class="info-footer__kitchener-text">2016</span>
+				</div>
+				<div class="info-footer__social">
+					<!--<a href="https://twitter.com/camstrobel" target="_blank" class="fa fa-twitter info-footer__social-icon--twitter"></a>-->
+					<a href="https://github.com/millskyle" target="_blank" class="fa fa-github info-footer__social-icon--github"></a>
+					<a href="https://www.instagram.com/mills_kyle" target="_blank" class="fa fa-instagram info-footer__social-icon--instagram"></a>
+					<a href="https://www.linkedin.com/in/millskyle" target="_blank" class="fa fa-linkedin info-footer__social-icon--linkedin"></a>
+					<!--<a href="https://dribbble.com/camstrobel" target="_blank" class="fa fa-dribbble info-footer__social-icon--dribbble"></a> -->
+
+					
+				</div>
+			</div>
+		</div>
+
+		
+        
+        
+        
+        <div class="container-main">
+            <div ng-app="myApp" ng-controller="myCtrl" id="mainDiv">
+		
+
+                
+                
+			<a name="top-desktop"></a>
+			<div class="main__container-about">
+
+				<div class="main__tag">About Me</div>
+				    <p class="main__copy">
+					   {{data.aboutMe}}
+                    </p>
+				<ul class="main__list">
+					<li class="main__list-item" ng-repeat="tool in data.tools"><a ng-href="{{tool[1]}}" target="_blank" >{{tool[0]}}</a></li>
+				</ul> 
+
+
+			</div>
+
+                
+<!--            PROJECTS-->
+                
+                
+			<div class="main__container-projects">
+				<div class="main__tag" ><span style="font-size:80%;">Projects</span></div>
+				<div ng-repeat="project in data.projects">
+                    
+                    
+                    
+                    <div  ng-class="$index > 0 ? 'main__project' : 'main__project--first'"  >
+
+                            <h2 class="main__project-title" ng-class="project.url ? 'external__title' : '' " ><a  href="{{ project.url }}" target="_blank">{{ project.name}}</a></h2>
+                            <p class="main__project-description">
+                                {{ project.desc }}
+                                <a href="">
+                                    <span ng-if='project.tooltip' id='MoreInfoButtonProject{{$index}}' class="MoreInfoButton">
+                                        More Info<span class="fa fa-chevron-circle-down" style='margin-left:4px;margin-right:4px;'></span>
+                                    </span>
+                                </a>
+                            </p>
+
+                        
+                        <div ng-if="project.tooltip" id='moreProjectInfo{{$index}}' class="main__project-description hidden moreInfoBox" >
+                            <div ng-bind-html="project.tooltip | inject"></div>
+                        </div>
+                    </div>
+                            
+                        
+                </div>
+			</div>
+
+            <!--        
+			<div class="main__container-clients">
+				<div class="main__tag">Block</div>
+				<p class="main__copy">
+					This is a block of text
+				</p>
+			</div>
+            -->
+
+            
+			<div class="main__container-experience">
+				<div class="main__tag"><span style="font-size:80%;">Publications</span></div>
+				<div class="main__experience" ng-repeat="publication in data.publications" >
+					<div class="main__experience-info" >                        
+                        <div  class="main__project-title"   style="font-weight:bold" >
+                            {{publication.title}} <span ng-if="publication.year">(</span>{{publication.year}}<span ng-if="publication.year">)</span><a ng-href="{{publication.url}}" ng-class="publication.url ? 'external__title' : '' " style='margin-left:10px;margin-right:10px;' >&nbsp;</a>
+                        </div>                        
+						<div class="main__experience-info-position" style="margin-bottom:5px;"><span style="font-style:italic;">{{publication.journal}} </span></div>
+                        <div class="main__project-description" style="margin-left:15px;margin-bottom:10px;"  >
+                             {{publication.desc}}
+                                <a href="">
+                                    <span ng-if='publication.tooltip' id='MoreInfoButtonPublication{{$index}}' class="MoreInfoButton">
+                                        More Info<span class="fa fa-chevron-circle-down" style='margin-left:4px;margin-right:4px;'></span>
+                                    </span>
+                                </a>
+                        </div>
+                        <div ng-if="publication.tooltip" id='morePublicationInfo{{$index}}' class="main__project-description hidden moreInfoBox" >
+                            <div ng-bind-html="publication.tooltip | inject"></div>
+                        </div>
+					</div>
+					<div class="main__experience-year"></div>
+				</div>		
+			</div>        
+            
+                
+                
+                
+            
+            <div class="main__container-experience">
+				<div class="main__tag"><span style="font-size:80%;">Presentations</span></div>
+				<div class="main__experience" ng-repeat="presentation in data.presentations">
+					<div class="main__experience-info">
+                       	<div class="main__project-title"  style="font-weight:bold">{{presentation.title}} <span ng-if="presentation.year">(</span>{{presentation.year}}<span ng-if="presentation.year">)</span>     </div>
+						<div class="main__experience-info-position" style="margin-bottom:5px;"><span style="font-style:italic;">{{presentation.event}} </span></div>
+                        <div class="main__project-description" style="margin-left:15px;margin-bottom:10px;">
+                             {{presentation.desc}}&nbsp;&nbsp;<i ng-if="presentation.tooltip" data-tooltip="{{presentation.tooltip}}" style="color:#888888;" class="fa fa-chevron-circle-down"> more info</i>
+                        </div>
+					</div>
+					<div class="main__experience-year"></div>
+				</div>
+			</div>
+            
+            
+            
+            
+            <div class="main__container-experience">
+				<div class="main__tag">Awards</div>
+				<div class="main__experience" ng-repeat="award in data.awards">
+					<div class="main__experience-info">
+						<div class="main__project-title" ng-class="award.url ? 'external__title' : '' " style="font-weight:bold">{{award.title}} <span ng-if="award.year">(</span>{{award.year}}<span ng-if="award.year">)</span></div>
+                        <div class="main__project-description" style="margin-left:15px;margin-bottom:10px;">
+                             {{award.desc}}
+                        </div>
+					</div>
+					<div class="main__experience-year"></div>
+				</div>
+			</div>
+            
+            
+
+            <div style="height:100px;" ><br></div>
+			<div class="main__container-resume">
+				<h2 class="main__resume"><a href="image/kyle_mills_resume.pdf" target="_blank">Download My Resume</a></h2>
+			</div>            
+            <div style="height:500px;"><br><br><br><br></div>
+
+                
+                
+                
+                
+        </div>
+    </div>
+        
+
+        
+        
+        <script type="text/javascript" src="info.js"></script>
+
+	</body>
+
+</html>
