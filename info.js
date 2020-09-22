@@ -77,7 +77,7 @@ app.controller('myCtrl', function($scope) {
                 doi: "10.1038/s42256-020-0226-x",
                 image: "./image/nmi_cool.jpg",
                 imageoffset: "50",
-                color: "#314463",
+                color: "#54beff",
             },
             
             {   title: "Adversarial generation of mesoscale surfaces fromsmall scale chemical motifs",
