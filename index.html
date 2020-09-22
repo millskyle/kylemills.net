@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+	<head> 
+	<meta property="og:title" content="Kyle Mills">
+<meta property="og:site_name" content="Kyle Mills">
+<meta property="og:url" content="http://kylemills.net">
+<meta property="og:description" content="I am a graduate student at the University of Ontario Institute of Technology. In 2015 I completed my Bachelor's of Science in physics, with a minor in mathematics. I am interested in general applications of computational models and techniques to scientific research, specifically in the area of computational materials science.">
+<meta property="fb:app_id" content="">
+<meta property="og:type" content="article">
+<meta property="og:image" content="http://kylemills.net/image/kyle_mills.png" >
+
+
+   	        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Kyle Mills">
+		<meta name="author" content="Kyle Mills">
+        <meta name="theme-color" content="#821122">
+
+		<title>Kyle Mills</title>
+	  
+
+  		<!--<link rel="stylesheet" href="style.css?a=45">-->
+    	<link rel="stylesheet" href="http://kylemills.net/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="./css/jquery.qtip.css" />
+        <link type="text/css" rel="stylesheet" href="./css/w3.css" />
+        <link type="text/css" rel="stylesheet" href="./css/style.css" />
+        
+	
+		<link rel="shortcut icon" href="http://kylemills.net/image/favicon.png" type="image/x-icon">
+		<link rel="icon" href="http://kylemills.net/image/favicon.png" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+        <script src="./scripts/jquery.min.js" ></script>
+        <script src="./script.js" ></script>
+        <script src="./scripts/jquery.qtip.min.js" ></script>
+        <script src="./scripts/masonry-min.js" ></script>
+   
+        <style>
+            .qtipClass {
+               background-color: #f5e9eb;
+               border-color:#821122;     
+               font-size: inherit;
+               
+               max-width: 90% !important;
+               max-height: 75%;
+               line-height: inherit;
+            }
+        </style>
+        
+        
+        
+
+        <style>
+        
+        .citation_count {
+           right:0;
+           bottom:-10px;
+           position:absolute;
+           zoom: 0.75;
+    	   -moz-transform: scale(0.75);
+        }
+        
+        </style>
+        
+        <script>
+        
+            $(document).ready(function() {
+                
+                $('[id^=MoreInfoButtonProject]').each(function(key,v){
+                    $(this).click(function() {
+//                        $('[id^=moreProjectInfo]').slideUp();
+                        $('#moreProjectInfo' + key).slideToggle();
+                    });  
+                });
+                
+                $('[id^=MoreInfoButtonPublication]').each(function(key,v){
+                    $(this).click(function() {
+//                        $('[id^=morePublicationInfo]').slideUp();
+                        $('#morePublicationInfo' + key).slideToggle();
+                    });  
+                });                
+                
+            })
+        
+        </script>
+        
+        <script>
+        $(document).ready(function() {
+	var showChar = 300;
+	var ellipsestext = "...";
+	var moretext = "more";
+	var lesstext = "less";
+	$('.more').each(function() {
+		var content = $(this).html();
+
+		if(content.length > showChar) {
+
+			var c = content.substr(0, showChar-1);
+			var h = content.substr(showChar-1, content.length - showChar);
+
+			var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+			$(this).html(html);
+		}
+
+	});
+
+	$(".morelink").click(function(){
+		if($(this).hasClass("less")) {
+			$(this).removeClass("less");
+			$(this).html(moretext);
+            
+		} else {
+			$(this).addClass("less");
+			$(this).html(lesstext);
+		}
+		$(this).parent().prev().toggle();
+		$(this).prev().toggle();
+        $('.masonry').masonry();
+
+		return false;
+	});
+});
+        
+            
+        </script>
+        
+        
+        <script>
+             $(document).ready(function() {
+                $('.masonry').each(function(index) {
+                    $(this).masonry({
+                        columnWidth: 400,
+                        itemSelector: '.grid-item'
+                        });
+                    $(this).masonry();
+                })
+            });
+            
+        
+            $(document).ready(function() {
+            window.addEventListener('scroll', function(){
+                $('.masonry').masonry();
+                
+            }, true);
+            })
+        </script>
+        
+        <script>
+//        $(document).ready(function() {
+//  // Get an array of all element heights
+//  var elementHeights = $('.w3-card-4').map(function() {
+//    return $(this).height();
+//  }).get();
+//
+//  // Math.max takes a variable number of arguments
+//  // `apply` is equivalent to passing each height as an argument
+//  var maxHeight = Math.max.apply(null, elementHeights);
+//
+//  // Set each height to the max height
+////  $('.w3-card-4').height(maxHeight*1.1);
+//});
+        
+        
+        
+        </script>
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+    </head>
+    <body>
+    
+        <?php include_once("analyticstracking.php") ?>
+
+        <div id="infoBar" class="container-info">	
+            <div class="opl"><a></a></div>
+			<a name="top-mobile"></a>
+			<div class="info-main">
+				<div class="info__headshot"><img class="info__headshot-img" src="image/kmills.jpg" title="Kyle Mills"></div>
+				<div class="info__tag"></div>
+				<div class="info__elevator" style='font-family: Roboto, sans-serif;'>
+					<h1 class="info__elevator-text">
+                        <span style="font-weight: 400; font-family:Roboto">Kyle</span> <span style="font-weight: 100; font-family:Roboto">Mills</span></h1>
+				</div>
+				
+				<h1 class="info__elevator-text"><a href="mailto:kyle.mills@ontariotechu.net" style="font-size:50%; font-weight: 100; font-family:Roboto">kyle.mills@ontariotechu.net</a> </h1>
+			</div>
+			<div class="info-footer">
+				<div class="info-footer__kitchener">					
+					<span class="info-footer__kitchener-text">2020</span>
+				</div>
+				<div class="info-footer__social">
+					<a href="https://github.com/millskyle" target="_blank" class="fa fa-github info-footer__social-icon--github"></a>
+					<a href="https://www.instagram.com/mills_kyle" target="_blank" class="fa fa-instagram info-footer__social-icon--instagram"></a>
+					<a href="https://twitter.com/kymguy" target="_blank" class="fa fa-twitter info-footer__social-icon--twitter"></a>
+					<a href="https://www.linkedin.com/in/millskyle" target="_blank" class="fa fa-linkedin info-footer__social-icon--linkedin"></a>
+					<!--<a href="https://dribbble.com/camstrobel" target="_blank" class="fa fa-dribbble info-footer__social-icon--dribbble"></a> -->
+
+					
+				</div>
+			</div>
+		</div>
+
+		
+        
+        
+        
+        <div class="container-main">
+            <div ng-app="myApp" ng-controller="myCtrl" id="mainDiv">
+		
+
+                
+                
+			<a name="top-desktop"></a>
+			<div class="main__container-about">
+
+				<!--<div class="main__tag"><span style='font-size: 50%'>About Me</span></div>-->
+				    <div class="main__copy" ng-bind-html="data.aboutMe">
+					   
+                    </div>
+				<ul class="main__list">
+					<li class="main__list-item" ng-repeat="tool in data.tools"><a ng-href="{{tool[1]}}" target="_blank" >{{tool[0]}}</a></li>
+				</ul> 
+
+
+			</div>
+
+            
+                
+                
+            <div class="main__container-experience">
+				
+            
+                <!-- PUBLICATIONS -->
+                <hr style='width:50%'>
+                
+                <div class="main__tag"><span>Publications</span></div>
+                <div id='PublicationMasonry' class="allcards masonry">
+                    <div class="main__experience" ng-repeat="publication in data.publications" >
+                        <div class="main__experience-info" >    
+                            <div class="publicationCard grid-item" style="padding-bottom: 25px;" >
+                                <a href='{{publication.url}}' target="_blank">
+                                    <div class="w3-card-4" style='padding-bottom: 10px; overflow:hidden;  background-color: #f7f6f2; margin-left:10px; margin-right:10px;' >
+                                        <div class="banner" style='display:inline-block; background-color:#FF0000; width:100%'>
+                                            <div class="imagecrop" style='height:133px; width:100%; background-color:{{publication.color}}; ';  >
+                                                <div class='thumbnailimg' style='height:100%; background-image: url({{publication.image}});background-size:cover;background-repeat:no-repeat;background-position: center center;'>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="infocontainer" style='position:relative;margin:25px;' >
+                                            <div style='display:block;'>
+                                                <div class='pubjournal' style='float:left; display:inline; font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000; margin-top:-18px;margin-left:-18px;'>{{publication.journal}}</div>
+                                                <div class='pubyear' style='float:right; display:inline; font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000; margin-top:-18px;margin-right:-18px'>{{publication.year}}</div>
+                                            </div>
+                                            <div>&nbsp;</div>
+                                            <div style='display:block;'>
+                                                <div class='pubtitle' style='font-family:Roboto, sans-serif; font-weight:400;font-size:125%;margin-top:-10px;'>{{publication.title}}</div>
+                                                <div class='pubauthors' style='font-family:Roboto, sans-serif;color:#aaaaaa;'>{{publication.authors}}</div>
+                                            </div>
+                                            
+                                            <div style='margin-top:20px; margin-bottom:10px;' >
+                                                <div class='comment more' style='' >
+                                                    {{publication.desc}}
+                                                </div>
+                                            </div>
+                                            <div class='cardfooter' style="display:block; width:100%; margin-top:20px; margin-bottom:25px;text-align:left;font-family:'Roboto', sans-serif;font-weight:700;color:{{publication.color}};"  >
+                                                <div>
+                                                    <div style="display:inline; color:{{publication.color}};float:left;" >
+                                                        <a href='{{publication.pdf}}' target='_blank'>PDF</a>
+                                                    </div>
+                                                    <div style='display:inline; float:left; color:{{publication.color}}; margin-left: 30px;'>  
+                                                        <a href='{{publication.url}}' target='_blank'>LINK</a>
+                                                    </div>
+                                                    <div><br></div>
+                                                    <div style='font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000;margin-top:10px;'>{{publication.doi}} </div>
+                                                    <div ng-if="publication.doi" class='citation_count'><span class="__dimensions_badge_embed__" data-doi="{{publication.doi}}" data-style="small_circle"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                </a>
+                            </div>                        
+                        </div>		
+                    </div>
+                </div>
+                
+                <!-- END PUBLICATIONS -->
+                
+                
+                
+                
+                
+                <!-- PROJECTS -->
+                <hr style='width:50%'>
+                
+                <div class="main__tag"><span>Projects</span></div>
+                <div id='ProjectMasonry' class="allcards masonry" >
+                    <div class="main__experience" ng-repeat="project in data.projects" >
+                        <div class="main__experience-info" >    
+                            <div class="publicationCard grid-item" style="padding-bottom: 25px;" >
+                                <a href='{{project.url}}' target="_blank">
+                                    <div class="w3-card-4" style='padding-bottom: 10px; overflow:hidden;  background-color: #f7f6f2; margin-left:10px; margin-right:10px;' >
+                                        <div class="banner" style='display:inline-block; background-color:#FF0000; width:100%'>
+                                            <div class="imagecrop" style='height:133px; width:100%; background-color:{{project.color}}; ';  >
+                                                <div class='thumbnailimg' style='height:100%; background-image: url({{project.image}});background-size:cover;background-repeat:no-repeat;background-position: center center;'>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="infocontainer" style='position:relative;margin:25px;' >
+                                            <div style='display:block;'>
+                                                <div class='pubjournal' style='float:left; display:inline; font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000; margin-top:-18px;margin-left:-18px;'>{{project.journal}}</div>
+                                                <div class='pubyear' style='float:right; display:inline; font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000; margin-top:-18px;margin-right:-18px'>{{project.year}}</div>
+                                            </div>
+                                            <div>&nbsp;</div>
+                                            <div style='display:block;'>
+                                                <div class='pubtitle' style='font-family:Roboto, sans-serif; font-weight:400;font-size:125%;margin-top:-10px;'>{{project.title}}</div>
+                                                <div class='pubauthors' style='font-family:Roboto, sans-serif;color:#aaaaaa;'>{{project.authors}}</div>
+                                            </div>
+                                            
+                                            <div style='margin-top:20px; margin-bottom:10px;' >
+                                                <div class='comment more' style='' >
+                                                    {{project.desc}}
+                                                </div>
+                                            </div>
+                                            <div class='cardfooter' style="display:block; width:100%; margin-top:20px; margin-bottom:25px;text-align:left;font-family:'Roboto', sans-serif;font-weight:700;color:{{project.color}};text-transform: uppercase;"  >
+                                                <div>
+<!--
+                                                    <div style="display:inline; color:{{project.color}};float:left;" >
+                                                        <a href='{{project.pdf}}' target='_blank'>PDF</a>
+                                                    </div>
+-->
+                                                    <div style='display:inline; float:left; color:{{project.color}};'>  
+                                                        <a href='{{project.url}}' target='_blank'>LINK</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                </a>
+                            </div>                        
+                        </div>		
+                    </div>
+                </div>
+                
+                <!-- END PROJECTS -->
+                
+                
+                
+                
+            
+                <!-- PRESENTATIONS -->
+                <hr style='width:50%'>
+                
+                <div class="main__tag"><span>Presentations</span></div>
+                <div id='PresentationMasonry' class="allcards masonry" >
+                    <div class="main__experience" ng-repeat="presentation in data.presentations" >
+                        <div class="main__experience-info" >    
+                            <div class="publicationCard grid-item" style="padding-bottom: 25px;" >
+<!--                                <a href='{{presentation.url}}' target="_blank">-->
+                                    <div class="w3-card-4" style='padding-bottom: 10px; overflow:hidden;  background-color: #f7f6f2; margin-left:10px; margin-right:10px;' >
+                                        <!--<div class="banner" style='display:inline-block; background-color:#FF0000; width:100%'>
+                                            <div class="imagecrop" style='height:133px; width:100%; background-color:{{presentation.color}}; ';  >
+                                                <div class='thumbnailimg' style='height:100%; background-image: url({{presentation.image}});background-size:cover;background-repeat:no-repeat;background-position: center center;'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        -->
+
+                                        <div class="infocontainer" style='position:relative;margin:25px;' >
+                                            <div style='display:block;'>
+                                                <div class='pubjournal' style='float:left; display:inline; font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000; margin-top:-18px;margin-left:-18px;'>{{presentation.city}}</div>
+                                                <div class='pubyear' style='float:right; display:inline; font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000; margin-top:-18px;margin-right:-18px'>{{presentation.year}}</div>
+                                            </div>
+                                            <div>&nbsp;</div>
+                                            <div style='display:block;'>
+                                                <div class='pubtitle' style='font-family:Roboto, sans-serif; font-weight:400;font-size:125%;margin-top:-10px;'>{{presentation.title}}</div>
+                                                <div class='pubauthors' style='font-family:Roboto, sans-serif;color:#aaaaaa;'>{{presentation.event}}</div>
+                                            </div>
+                                            
+                                            <div style='margin-top:20px; margin-bottom:10px;' >
+                                                <div class='comment more' style='' >
+                                                    {{presentation.desc}}
+                                                </div>
+                                            </div>
+                                            <!--<div class='cardfooter' style="display:block; width:100%; margin-top:20px; margin-bottom:25px;text-align:left;font-family:'Roboto', sans-serif;font-weight:700;color:{{presentation.color}};text-transform: uppercase;"  >
+                                                <div>
+                                                    <div style="display:inline; color:{{presentation.color}};float:left;" >
+                                                        <a href='{{presentation.pdf}}' target='_blank'>PDF</a>
+                                                    </div>
+                                                    <div style='display:inline; float:left; color:{{presentation.color}}; margin-left: 30px;'>  
+                                                        <a href='{{presentation.url}}' target='_blank'>LINK</a>
+                                                    </div>
+                                                </div>
+                                            </div>-->
+                                        </div>                                
+                                    </div>
+<!--                                </a>-->
+                            </div>                        
+                        </div>		
+                    </div>
+                </div>
+                
+                <!-- END PRESENTATIONS -->
+                
+                                
+                
+            
+                <!-- AWARDS -->
+                <hr style='width:50%'>
+                
+                <div class="main__tag"><span>Awards</span></div>
+                <div id='AwardsMasonry' class="allcards masonry" >
+                    <div class="main__experience" ng-repeat="award in data.awards" >
+                        <div class="main__experience-info" >    
+                            <div class="publicationCard grid-item" style="padding-bottom: 25px;" >
+<!--                                <a href='{{award.url}}' target="_blank">-->
+                                    <div class="w3-card-4" style='padding-bottom: 10px; overflow:hidden;  background-color: #f7f6f2; margin-left:10px; margin-right:10px;' >
+                                        <!--<div class="banner" style='display:inline-block; background-color:#FF0000; width:100%'>
+                                            <div class="imagecrop" style='height:133px; width:100%; background-color:{{award.color}}; ';  >
+                                                <div class='thumbnailimg' style='height:100%; background-image: url({{award.image}});background-size:cover;background-repeat:no-repeat;background-position: center center;'>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        -->
+
+                                        <div class="infocontainer" style='position:relative;margin:25px;' >
+                                            <div style='display:block;'>
+                                                <div class='pubjournal' style='float:left; display:inline; font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000; margin-top:-18px;margin-left:-18px;'> </div>
+                                                <div class='pubyear' style='float:right; display:inline; font-family:Roboto, sans-serif; opacity:0.7; font-weight:100;color:#000; margin-top:-18px;margin-right:-18px'>{{award.year}}</div>
+                                            </div>
+                                            <div>&nbsp;</div>
+                                            <div style='display:block;'>
+                                                <div class='pubtitle' style='font-family:Roboto, sans-serif; font-weight:400;font-size:125%;margin-top:-10px;'>{{award.title}}</div>
+                                                <div class='pubauthors' style='font-family:Roboto, sans-serif;color:#aaaaaa;'>{{award.organization}} </div>
+                                            </div>
+                                            
+                                            <div style='margin-top:20px; margin-bottom:10px;' >
+                                                <div class='comment more' style='' >
+                                                    {{award.desc}}
+                                                </div>
+                                            </div>
+                                            <!--<div class='cardfooter' style="display:block; width:100%; margin-top:20px; margin-bottom:25px;text-align:left;font-family:'Roboto', sans-serif;font-weight:700;color:{{award.color}};text-transform: uppercase;"  >
+                                                <div>
+                                                    <div style="display:inline; color:{{award.color}};float:left;" >
+                                                        <a href='{{award.pdf}}' target='_blank'>PDF</a>
+                                                    </div>
+                                                    <div style='display:inline; float:left; color:{{award.color}}; margin-left: 30px;'>  
+                                                        <a href='{{award.url}}' target='_blank'>LINK</a>
+                                                    </div>
+                                                </div>
+                                            </div>-->
+                                        </div>                                
+                                    </div>
+<!--                                </a>-->
+                            </div>                        
+                        </div>		
+                    </div>
+                </div>
+                
+                <!-- END AWARDS -->    
+                
+                
+
+            
+
+            <hr style='width:50%'>
+            
+
+            <div style="height:100px;" ><br></div>
+			<div class="main__container-resume" >
+				<h2 class="main__resume" style="font-family:Roboto, sans-serif; font-size:300%; font-weight:400;"><a href="image/kyle_mills_resume.pdf" target="_blank">Download My Resume</a></h2>
+			</div>            
+            <div style="height:200px;"><br><br><br><br></div>
+
+                
+                
+                
+                
+        </div>
+    </div>
+        
+
+        
+        
+        <script type="text/javascript" src="info.js"></script>
+        <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+	</body>
+
+</html>
