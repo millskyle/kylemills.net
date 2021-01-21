@@ -220,7 +220,31 @@ app.controller('myCtrl', function($scope) {
         
         ],
         presentations: [
-            {   title: "Extensive deep neural networks (for materials)",
+	    {   title: "Adversarial generation of mesoscale surfaces from small scale chemical motifs",
+                event: "Neurips 2019",
+                city: "Vancouver, British Columbia",
+                desc: "Machine Learning for Physical Sciences Workshop",
+                year: 2019,
+                url:'https://ml4physicalsciences.github.io/files/NeurIPS_ML4PS_2019_120.pdf',
+                tooltip:""
+            }, 
+            {   title: "Regressive Upscaling Generative Adversarial Networks",
+                event: "Vector Institute Evolution of Deep Learning Symposium",
+                city: "Toronto, Ontario",
+                desc: "Poster Presentation",
+                year: 2019,
+                url:'',
+                tooltip:""
+            }, 
+	    {   title: "Extensive Deep Neural Networks",
+                event: "International High Performance Computing Summer School",
+                city: "Kobe, Japan",
+                desc: "Poster Presentation",
+                year: 2019,
+                url:'',
+                tooltip:""
+            }, 
+	    {   title: "Extensive deep neural networks (for materials)",
                 event: "Computational Materials North",
                 city: "Montreal, Québec",
                 desc: "Presented extensive deep neural networks at inaugural Computational Materials North",
