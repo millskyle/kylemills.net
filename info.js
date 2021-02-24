@@ -66,6 +66,18 @@ app.controller('myCtrl', function($scope) {
                 }
         ],
         publications: [
+	    {   title: "Weakly-supervised multi-class object localization using only object counts as labels",
+                authors: "Kyle Mills, Isaac Tamblyn",
+                journal: "Preprint",
+                desc: "We demonstrate the use of an extensive deep neural network to localize instances of objects in images. The EDNN is naturally able to accurately perform multi-class counting using only ground truth count values as labels. Without providing any conceptual information, object annotations, or pixel segmentation information, the neural network is able to formulate its own conceptual representation of the items in the image. Using images labelled with only the counts of the objects present,the structure of the extensive deep neural network can be exploited to perform localization of the objects within the visual field. We demonstrate that a trained EDNN can be used to count objects in images much larger than those on which it was trained. In order to demonstrate our technique, we introduce seven new data sets: five progressively harder MNIST digit-counting data sets, and two datasets of 3d-rendered rubber ducks in various situations. On most of these datasets, the EDNN achieves greater than 99% test set accuracy in counting objects.",
+                year: 2021,
+                url: "https://arxiv.org/abs/2102.11743",
+                pdf: "https://arxiv.org/pdf/2102.11743",
+                doi: "",
+                image: "./image/ducks.jpg",
+                imageoffset: "50",
+                color: "#ffcf40",
+            },
             
             {   title: "Finding the ground state of spin Hamiltonians with reinforcement learning",
                 authors: "Kyle Mills, Pooya Ronagh, Isaac Tamblyn",
