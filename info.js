@@ -76,7 +76,7 @@ app.controller('myCtrl', function($scope) {
                 doi: "",
                 image: "./image/ducks.jpg",
                 imageoffset: "50",
-                color: "#ffcf40",
+                color: "#eba834",
             },
             
             {   title: "Finding the ground state of spin Hamiltonians with reinforcement learning",
