@@ -102,9 +102,9 @@ app.controller('myCtrl', function($scope) {
                 url: "https://arxiv.org/abs/2002.07055",
                 pdf: "https://arxiv.org/pdf/2002.07055",
                 //doi: "10.1039/C8SC04578J",
-                image: "",
+                image: "./image/rugan0.jpg",
                 //imageoffset: "15",
-                color: "#FFA05C",
+                color: "#c26e9a",
             },
 	    
 	    {   title: "Crystal Site Feature Embedding Enables Exploration of Large Chemical Spaces",
