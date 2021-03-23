@@ -179,9 +179,9 @@ app.controller('myCtrl', function($scope) {
                 year: 2017,
                 url: "https://arxiv.org/abs/1710.08053",
                 pdf: "https://arxiv.org/pdf/1710.08053.pdf",
-                image: "",
+                image: "./image/gan0.jpg",
                 imageoffset: "0",
-                color: "#F26157",
+                color: "#302e5f",
             },
             
             {   title: "Optical lattice experiments at unobserved conditions and scales through generative adversarial deep learning",
