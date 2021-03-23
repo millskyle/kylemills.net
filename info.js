@@ -66,18 +66,7 @@ app.controller('myCtrl', function($scope) {
                 }
         ],
         publications: [
-	    {   title: "Weakly-supervised multi-class object localization using only object counts as labels",
-                authors: "Kyle Mills, Isaac Tamblyn",
-                journal: "Preprint",
-                desc: "We demonstrate the use of an extensive deep neural network to localize instances of objects in images. The EDNN is naturally able to accurately perform multi-class counting using only ground truth count values as labels. Without providing any conceptual information, object annotations, or pixel segmentation information, the neural network is able to formulate its own conceptual representation of the items in the image. Using images labelled with only the counts of the objects present,the structure of the extensive deep neural network can be exploited to perform localization of the objects within the visual field. We demonstrate that a trained EDNN can be used to count objects in images much larger than those on which it was trained. In order to demonstrate our technique, we introduce seven new data sets: five progressively harder MNIST digit-counting data sets, and two datasets of 3d-rendered rubber ducks in various situations. On most of these datasets, the EDNN achieves greater than 99% test set accuracy in counting objects.",
-                year: 2021,
-                url: "https://arxiv.org/abs/2102.11743",
-                pdf: "https://arxiv.org/pdf/2102.11743",
-                doi: "",
-                image: "./image/ducks.jpg",
-                imageoffset: "50",
-                color: "#eba834",
-            },
+
             
             {   title: "Finding the ground state of spin Hamiltonians with reinforcement learning",
                 authors: "Kyle Mills, Pooya Ronagh, Isaac Tamblyn",
@@ -104,8 +93,21 @@ app.controller('myCtrl', function($scope) {
                 imageoffset: "50",
                 color: "#7e7394",
             },
-            
-            {   title: "Crystal Site Feature Embedding Enables Exploration of Large Chemical Spaces",
+				
+	    {   title: "Optical lattice experiments at unobserved conditions and scales through generative adversarial deep learning",
+                authors: "Corneel Casert, Kyle Mills, Tom Vieijra, Jan Ryckebusch, Isaac Tamblyn",
+                journal: "Submitted",
+                desc: "Machine learning provides a novel avenue for the study of experimental realizations of many-body systems, and has recently been proven successful in analyzing properties of experimental data of ultracold quantum gases. We here show that deep learning succeeds in the more challenging task of modelling such an experimental data distribution. Our generative model (RUGAN) is able to produce snapshots of a doped two-dimensional Fermi-Hubbard model that are indistinguishable from previously reported experimental realizations. Importantly, it is capable of accurately generating snapshots at conditions for which it did not observe any experimental data, such as at higher doping values. On top of that, our generative model extracts relevant patterns from small-scale examples and can use these to construct new configurations at a larger size that serve as a precursor to observations at scales that are currently experimentally inaccessible. The snapshots created by our model---which come at effectively no cost---are extremely useful as they can be employed to quantitatively test new theoretical developments under conditions that have not been explored experimentally, parameterize phenomenological models, or train other, more data-intensive, machine learning methods. We provide predictions for experimental observables at unobserved conditions and benchmark these against modern theoretical frameworks. The deep learning method we develop here is broadly applicable and can be used for the efficient large-scale simulation of equilibrium and nonequilibrium physical systems.",
+                year: 2020,
+                url: "https://arxiv.org/abs/2002.07055",
+                pdf: "https://arxiv.org/pdf/2002.07055",
+                //doi: "10.1039/C8SC04578J",
+                image: "",
+                //imageoffset: "15",
+                color: "#FFA05C",
+            },
+	    
+	    {   title: "Crystal Site Feature Embedding Enables Exploration of Large Chemical Spaces",
                 authors: "Hitarth Choubisa, Mikhail Askerka, Kevin Ryczko, Oleksandr Voznyy, Kyle Mills, Isaac Tamblyn, Edward H. Sargent",
                 journal: "Matter",
                 desc: "Mapping materials science problems onto computational frameworks suitable for machine learning can accelerate materials discovery. Combining proposed crystal site feature embedding (CSFE) representation with convolutional and extensive deep neural networks, we achieve a low mean absolute test error of 3.7 meV/atom and 0.069 eV on density functional theory energies and band gaps of mixed halide perovskites. We explore how a small amount of cadmium doping can potentially be applied in solar cell design and sample the large chemical space by using a variational autoencoder to discover interesting perovskites with band gaps in the ultraviolet and infrared. Additionally, we use CSFE to explore chemical spaces and small doping concentrations beyond those used for training. We further show that CSFE has a mean absolute test error of 7 meV/atom and 0.13 eV for total energies and band gaps for 2D perovskites and discuss its adaptability for exploration of an even wider variety of chemical systems.",
@@ -117,8 +119,21 @@ app.controller('myCtrl', function($scope) {
                 imageoffset: "50",
                 color: "#007bdc",
             },
-
-
+		
+		
+            {   title: "Weakly-supervised multi-class object localization using only object counts as labels",
+                authors: "Kyle Mills, Isaac Tamblyn",
+                journal: "Preprint",
+                desc: "We demonstrate the use of an extensive deep neural network to localize instances of objects in images. The EDNN is naturally able to accurately perform multi-class counting using only ground truth count values as labels. Without providing any conceptual information, object annotations, or pixel segmentation information, the neural network is able to formulate its own conceptual representation of the items in the image. Using images labelled with only the counts of the objects present,the structure of the extensive deep neural network can be exploited to perform localization of the objects within the visual field. We demonstrate that a trained EDNN can be used to count objects in images much larger than those on which it was trained. In order to demonstrate our technique, we introduce seven new data sets: five progressively harder MNIST digit-counting data sets, and two datasets of 3d-rendered rubber ducks in various situations. On most of these datasets, the EDNN achieves greater than 99% test set accuracy in counting objects.",
+                year: 2020,
+                url: "https://arxiv.org/abs/2102.11743",
+                pdf: "https://arxiv.org/pdf/2102.11743",
+                doi: "",
+                image: "./image/ducks.jpg",
+                imageoffset: "50",
+                color: "#eba834",
+            },
+            
 
            {    title: "Extensive deep neural networks for transferring small scale learning to large scale systems",
                 authors: "Kyle Mills, Kevin Ryczko, Iryna Luchak, Adam Domurad, Chris Beeler, Isaac Tamblyn",
@@ -132,6 +147,22 @@ app.controller('myCtrl', function($scope) {
                 imageoffset: "15",
                 color: "#7F195D",
             },
+		
+		
+		
+	    {   title: "Phase space sampling and operator confidence with generative adversarial networks",
+                authors: "Kyle Mills and Isaac Tamblyn",
+                journal: "",
+                desc: "We demonstrate that a generative adversarial network can be trained to produce Ising model configurations in distinct regions of phase space. In training a generative adversarial network, the discriminator neural network becomes very good a discerning examples from the training set and examples from the testing set. We demonstrate that this ability can be used as an anomaly detector, producing estimations of operator values along with a confidence in the prediction.",
+                year: 2017,
+                url: "https://arxiv.org/abs/1710.08053",
+                pdf: "https://arxiv.org/pdf/1710.08053.pdf",
+                image: "./image/gan0.jpg",
+                imageoffset: "0",
+                color: "#302e5f",
+            },		
+		
+		
             
             {   title: "Convolutional neural networks for atomistic systems",
                 authors: "Kevin Ryczko, Kyle Mills, Iryna Luchak, Christa Homenick, Isaac Tamblyn",
@@ -145,6 +176,9 @@ app.controller('myCtrl', function($scope) {
                 imageoffset: "0",
                 color: "#3E66AE",
             },
+		
+		
+		
             
             {   title: "Deep neural networks for direct, featureless learning through observation: the case of 2d spin models",
                 authors: "Kyle Mills, Isaac Tamblyn",
@@ -172,31 +206,8 @@ app.controller('myCtrl', function($scope) {
                 color:"#67197F",
             },
             
-            {   title: "Phase space sampling and operator confidence with generative adversarial networks",
-                authors: "Kyle Mills and Isaac Tamblyn",
-                journal: "",
-                desc: "We demonstrate that a generative adversarial network can be trained to produce Ising model configurations in distinct regions of phase space. In training a generative adversarial network, the discriminator neural network becomes very good a discerning examples from the training set and examples from the testing set. We demonstrate that this ability can be used as an anomaly detector, producing estimations of operator values along with a confidence in the prediction.",
-                year: 2017,
-                url: "https://arxiv.org/abs/1710.08053",
-                pdf: "https://arxiv.org/pdf/1710.08053.pdf",
-                image: "./image/gan0.jpg",
-                imageoffset: "0",
-                color: "#302e5f",
-            },
-            
-            {   title: "Optical lattice experiments at unobserved conditions and scales through generative adversarial deep learning",
-                authors: "Corneel Casert, Kyle Mills, Tom Vieijra, Jan Ryckebusch, Isaac Tamblyn",
-                journal: "Submitted",
-                desc: "Machine learning provides a novel avenue for the study of experimental realizations of many-body systems, and has recently been proven successful in analyzing properties of experimental data of ultracold quantum gases. We here show that deep learning succeeds in the more challenging task of modelling such an experimental data distribution. Our generative model (RUGAN) is able to produce snapshots of a doped two-dimensional Fermi-Hubbard model that are indistinguishable from previously reported experimental realizations. Importantly, it is capable of accurately generating snapshots at conditions for which it did not observe any experimental data, such as at higher doping values. On top of that, our generative model extracts relevant patterns from small-scale examples and can use these to construct new configurations at a larger size that serve as a precursor to observations at scales that are currently experimentally inaccessible. The snapshots created by our model---which come at effectively no cost---are extremely useful as they can be employed to quantitatively test new theoretical developments under conditions that have not been explored experimentally, parameterize phenomenological models, or train other, more data-intensive, machine learning methods. We provide predictions for experimental observables at unobserved conditions and benchmark these against modern theoretical frameworks. The deep learning method we develop here is broadly applicable and can be used for the efficient large-scale simulation of equilibrium and nonequilibrium physical systems.",
-                year: 2020,
-                url: "https://arxiv.org/abs/2002.07055",
-                pdf: "https://arxiv.org/pdf/2002.07055",
-                //doi: "10.1039/C8SC04578J",
-                image: "",
-                //imageoffset: "15",
-                color: "#FFA05C",
-            },
-            
+          
+           
             {   title: "Optimizing thermodynamic trajectories using evolutionary reinforcement learning",
                 authors: "Chris Beeler, Uladzimir Yahorau, Rory Coles, Kyle Mills, Stephen Whitelam, Isaac Tamblyn",
                 journal: "Submitted",
