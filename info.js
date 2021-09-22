@@ -66,7 +66,16 @@ app.controller('myCtrl', function($scope) {
                 }
         ],
         publications: [
-
+		{title: "On deep learning in physics",
+		 authors: "Kyle Mills",
+		 journal: "Ph.D. Dissertation",
+		 desc: "Machine learning, and most notably deep neural networks, have seen unprecedented success in recent years due to their ability to learn complex nonlinear mappings by ingesting large amounts of data through the process of training. This learning-by-example approach has slowly made its way into the physical sciences in recent years. In this dissertation I present a collection of contributions at the intersection of the fields of physics and deep learning. These contributions constitute some of the earlier introductions of deep learning to the physical sciences, and comprises a range of machine learning techniques, such as feed forward neural networks, generative models, and reinforcement learning. A focus will be placed on the lessons and techniques learned along the way that would influence future research projects.",
+		 year: 2021, 
+		 url: "https://ir.library.dc-uoit.ca/handle/10155/1299",
+		 pdf: "https://ir.library.dc-uoit.ca/bitstream/10155/1299/1/Mills_Kyle.pdf", 
+		 
+		 
+		},
             
             {   title: "Finding the ground state of spin Hamiltonians with reinforcement learning",
                 authors: "Kyle Mills, Pooya Ronagh, Isaac Tamblyn",
@@ -96,12 +105,12 @@ app.controller('myCtrl', function($scope) {
 				
 	    {   title: "Optical lattice experiments at unobserved conditions and scales through generative adversarial deep learning",
                 authors: "Corneel Casert, Kyle Mills, Tom Vieijra, Jan Ryckebusch, Isaac Tamblyn",
-                journal: "Submitted",
+                journal: "Physical Review Research",
                 desc: "Machine learning provides a novel avenue for the study of experimental realizations of many-body systems, and has recently been proven successful in analyzing properties of experimental data of ultracold quantum gases. We here show that deep learning succeeds in the more challenging task of modelling such an experimental data distribution. Our generative model (RUGAN) is able to produce snapshots of a doped two-dimensional Fermi-Hubbard model that are indistinguishable from previously reported experimental realizations. Importantly, it is capable of accurately generating snapshots at conditions for which it did not observe any experimental data, such as at higher doping values. On top of that, our generative model extracts relevant patterns from small-scale examples and can use these to construct new configurations at a larger size that serve as a precursor to observations at scales that are currently experimentally inaccessible. The snapshots created by our model---which come at effectively no cost---are extremely useful as they can be employed to quantitatively test new theoretical developments under conditions that have not been explored experimentally, parameterize phenomenological models, or train other, more data-intensive, machine learning methods. We provide predictions for experimental observables at unobserved conditions and benchmark these against modern theoretical frameworks. The deep learning method we develop here is broadly applicable and can be used for the efficient large-scale simulation of equilibrium and nonequilibrium physical systems.",
-                year: 2020,
-                url: "https://arxiv.org/abs/2002.07055",
+                year: 2021,
+                url: "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.033267",
                 pdf: "https://arxiv.org/pdf/2002.07055",
-                //doi: "10.1039/C8SC04578J",
+                doi: "10.1103/PhysRevResearch.3.033267",
                 image: "./image/rugan0.jpg",
                 //imageoffset: "15",
                 color: "#c26e9a",
