@@ -66,6 +66,7 @@ app.controller('myCtrl', function($scope) {
                 }
         ],
         publications: [
+		
 		{title: "On deep learning in physics",
 		 authors: "Kyle Mills",
 		 journal: "Ph.D. Dissertation",
