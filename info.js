@@ -8,14 +8,10 @@ app.controller('myCtrl', function($scope) {
 	$scope.application = "<? echo $_GET['a']; ?>";
     $scope.data= { 
 	    tools: [
-                ["Python, C, C++, Fortran, PHP",""],
-		        ["Version control (Git)",""],
-			// ["VMD (Visual Molecular Dynamics)", "http://www.ks.uiuc.edu/Research/vmd/"],
-			// ["POVRay (ray tracing)","http://www.povray.org/"],
-				["Databases (SQL, MySQL, SqLite, InfluxDB)",""],
-                //["Caffe (Deep Neural Networks)","http://caffe.berkeleyvision.org/"],
-                ["TensorFlow (Deep Neural Networks)","https://www.tensorflow.org"],
-                ["Matplotlib, Inkscape, Blender"]
+                        ["1QBit [Vancouver, British Columbia]","https://1qbit.com/"],
+		        ["Ontario Tech University [Oshawa, Ontario]","https://ontariotechu.ca/"],
+			["National Research Council Canada [Ottawa, Ontario]", "https://nrc.canada.ca/en/"],
+                        ["Vector Institute for Artificial Intelligence [Toronto, Ontario]","https://vectorinstitute.ai/"]
                ],
     	projects: [ 
 		    	{ 	name: "ISAAC",
@@ -74,6 +70,7 @@ app.controller('myCtrl', function($scope) {
 		 year: 2021, 
 		 url: "https://ir.library.dc-uoit.ca/handle/10155/1299",
 		 pdf: "https://ir.library.dc-uoit.ca/bitstream/10155/1299/1/Mills_Kyle.pdf", 
+		 color: "#821122",
 		 
 		 
 		},
@@ -434,7 +431,7 @@ app.controller('myCtrl', function($scope) {
             },
         ],
         
-        aboutMe: "In 2021, I completed my Ph.D. from <a href='http://uoit.ca' target='_blank'>Ontario Tech University</a>: <a href='http://hdl.handle.net/10155/1299' target='_blank'>''On deep learning in physics''</a>. During my Ph.D., I was a <a href='https://vectorinstitute.ai/2019/03/25/vector-institute-welcomes-new-postgraduate-affiliates-to-its-growing-research-community/' target='_blank'>2019-20 Vector Institute Postgraduate Affiliate</a>, and an NSERC Alexander Graham Bell Canada Graduate Scholar. I am currently a Research Scientist at <a href='https://1qbit.com/'  target='_blank'>1QBit</a>, investigating the application of reinforcement learning to aspects of quantum computing.  In 2015 I completed my Bachelor's of Science in physics, with a minor in mathematics, and began my Master's in Modelling and Computational Sciences.  In 2017, I transitioned to my PhD, and began as a visiting scholar at the <a href='https://www.nrc-cnrc.gc.ca/eng/index.html' target='_blank'> National Research Council Canada </a> in Ottawa.  My research interests include the application of deep learning and reinforcement learning to physics in general, but specifically to problems in materials science and computational chemistry.  I enjoy learning new things and applying my knowledge of physics, math, and programming to solve problems and produce useful and creative projects.  I have a broad range of technical skills ranging from graphic/web design to scientific high-performance computing.  Outside of school I enjoy photography and pretty much any outdoor activity such as hiking, biking, skiing, etc.  Below are just some of the tools and languages I use regularly:"
+        aboutMe: "In 2021, I completed my Ph.D. from <a href='http://uoit.ca' target='_blank'>Ontario Tech University</a>: <a href='http://hdl.handle.net/10155/1299' target='_blank'>''On deep learning in physics''</a>. During my Ph.D., I was a <a href='https://vectorinstitute.ai/2019/03/25/vector-institute-welcomes-new-postgraduate-affiliates-to-its-growing-research-community/' target='_blank'>2019-20 Vector Institute Postgraduate Affiliate</a>, and an NSERC Alexander Graham Bell Canada Graduate Scholar. I am currently a Research Scientist at <a href='https://1qbit.com/'  target='_blank'>1QBit</a>, investigating the application of reinforcement learning to aspects of quantum computing.  In 2015 I completed my Bachelor's of Science in physics, with a minor in mathematics, and began my Master's in Modelling and Computational Sciences.  In 2017, I transitioned to my Ph.D., and began as a visiting scholar at the <a href='https://www.nrc-cnrc.gc.ca/eng/index.html' target='_blank'> National Research Council Canada </a> in Ottawa.  My research interests include the application of deep learning and reinforcement learning to physics in general, but specifically to problems in materials science and computational chemistry.  I enjoy learning new things and applying my knowledge of physics, math, and programming to solve problems and produce useful and creative projects.  I have a broad range of technical skills ranging from graphic/web design to scientific high-performance computing.  Outside of school I enjoy pretty much any outdoor activity such as climbing, hiking, cycling, skiing, etc.  Below are links to the organizations I have been (or currently am) affiliated with: "
 	};
     
 });
