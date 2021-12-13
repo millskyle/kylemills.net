@@ -215,11 +215,11 @@ app.controller('myCtrl', function($scope) {
             
           
            
-            {   title: "Optimizing thermodynamic trajectories using evolutionary reinforcement learning",
+            {   title: "Optimizing thermodynamic trajectories using evolutionary and gradient-based reinforcement learning",
                 authors: "Chris Beeler, Uladzimir Yahorau, Rory Coles, Kyle Mills, Stephen Whitelam, Isaac Tamblyn",
-                journal: "Submitted",
+                journal: "Physical Review E",
                 desc: "Using a model heat engine we show that neural network-based reinforcement learning can identify thermodynamic trajectories of maximal efficiency. We use an evolutionary learning algorithm to evolve a population of neural networks, subject to a directive to maximize the efficiency of a trajectory composed of a set of elementary thermodynamic processes; the resulting networks learn to carry out the maximally-efficient Carnot, Stirling, or Otto cycles. Given additional irreversible processes this evolutionary scheme learns a hitherto unknown thermodynamic cycle. Our results show how the reinforcement learning strategies developed for game playing can be applied to solve physical problems conditioned upon path-extensive order parameters.",
-                year: 2019,
+                year: 2021,
                 url: "https://arxiv.org/abs/1903.08543",
                 pdf: "https://arxiv.org/pdf/1903.08543.pdf",
                 image: "",
